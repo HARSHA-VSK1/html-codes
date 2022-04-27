@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Ex</title>
+    <style>
+        body{
+            background-image: url("pic.webp");
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .navbar{
+            background-color: black;
+            font-weight: 600;
+            font-size: large;
+            /*border-radius: 20px;*/
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            margin: 16px 20px;
+        }
+        #off{
+            float: left;
+        }
+        .navbar :hover{
+            color: rgb(111, 246, 124);
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li:hover{
+            cursor: pointer;
+        }
+        .container{
+            height: 450px;
+            width:100%;
+            display: flex;
+            margin-top:5%;
+            
+        }
+        .item{
+            width:75%;
+            background-color: rgb(167, 226, 240);
+            padding: 30px;
+            opacity:0.8;
+        }
+        #imag{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navele">
+                <li id="off"><a href="https://www.cbit.ac.in/" target="blank">Chaitanya Bharathi Institute of Technology</a></li>
+                <li><a href="https://learning.cbit.org.in/" target="blank">LMS</a></li>
+                <li><a href="https://erp.cbit.org.in/beeserp/login.aspx" target="blank">STUDENT LOGIN</a></li>
+                <li><a href="https://www.cbit.ac.in/about_post/about/" target="blank">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item" id="item-1">
+            <img src="logo.png" alt="logo" id="imag" height="200" width="400"/>
+            <p>This is the home page of the CBIT website.</p><br/>
+            <p>College Contact Info</p>
+            <p>Gandipet, Hyderabad, Telangana,</p>
+            <p>PIN : 500075</p>
+            <p>Phone: 040-24193276</p>
+            <p>Mobile: 8466997201</p>
+            <p>For Admissions Enquiry: 8466997216</p>
+            <p>Email: principal@cbit.ac.in</p>
+        </div>
+    </div>
+</body>
+</html>

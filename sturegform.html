@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<style>
+    body{
+        /*background: linear-gradient(to bottom, rgb(31, 31, 212) 20%, rgb(226, 184, 105) 100%);*/
+        background: linear-gradient(to bottom,blue,rgb(241, 192, 100));
+        /*box-sizing: border-box;*/
+    }
+    h1{
+        border-width: 10;
+        text-align: center;
+        border-style: double;
+        background-color: #4023e2;
+        color: white;
+    }
+    fieldset{
+        background: linear-gradient(to bottom,rgb(109, 109, 233),rgb(247, 209, 140));
+        /*box-sizing: border-box;*/
+        /*background-color: rgb(193, 192, 248);*/
+        margin:5%;
+    }
+    
+</style>
+
+<body>
+    <fieldset>
+    <h1 style="text-align: center;">Student Registration Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Name*:</td>
+                <td><input type="text" name="Name" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Father's Name:</td>
+                <td><input type="text" name="Father's Name" size="30"/></td>
+            </tr>
+            <tr>
+                <td>Mother's Name:</td>
+                <td><input type="text" name="Mother's Name" size="30"/></td>
+            </tr>
+            <tr>
+                <td>Phone Number*:</td>
+                <td><input type="numbers" name="numberp" size="30" placeholder="+91 7799876543" required/></td>
+            </tr>
+            <tr>
+                <td>Email*:</td>
+                <td><input type="text" name="email" size="30" placeholder="example12@gmail.com" required/></td>
+            </tr>
+            <tr>
+                <td>Password*:</td>
+                <td><input type="password" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Confirm Password*:</td>
+                <td><input type="password" size="30" required/></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="1" size="30"/>male
+                <input type="radio" name="gender" value="2"/>female
+                <input type="radio" name="gender" value="3"/>other
+            </td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob" size="30"/></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea id="addressbox" rows="10" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Blood Group:</td>
+                <td><select name="Blood" id="bd" placeholder="Choose">
+                    <option value="1">A+</option>
+                    <option value="2">A-</option>
+                    <option value="3">B+</option>
+                    <option value="4">B-</option>
+                    <option value="5">AB+</option>
+                    <option value="6">AB-</option>
+                    <option value="7">O+</option>
+                    <option value="8">O-</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td>DEPARTMENT:</td>
+                <td><input type="radio" name="dep" value="1" size="30"/>CSE
+                <input type="radio" name="dep" value="2" size="30"/>ECE
+                <input type="radio" name="dep" value="3" size="30"/>MECH
+            </td>
+            </tr>
+            <tr>
+                <td>COURSE:</td>
+                <td>
+                    <input type="checkbox" name="course" value="1" size="30"/>C
+                    <input type="checkbox" name="course" value="2" size="30"/>C++
+                    <input type="checkbox" name="course" value="3" size="30"/>JAVA
+                    <input type="checkbox" name="course" value="4" size="30"/>Python
+                    <input type="checkbox" name="course" value="5" size="30"/>AI
+                    <input type="checkbox" name="course" value="6" size="30"/>WEB DEV
+                </td>
+            </tr>
+            <tr>
+                <td>PHOTO:</td>
+                <td><input type="file" name="PHOTOFILE" size="30" placeholder="Choose file"/></td>
+            </tr>
+        </table>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+    </fieldset>
+</body>
+</html>

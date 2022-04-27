@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Pizza</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color:black;
+            font-weight: 600;
+        }
+        form{
+            width:70%;
+            margin: auto;
+            
+        }
+        table,tr,td{
+            border:2px solid black;
+            margin-left: 5px;
+            
+        }
+        #tab{
+            margin: auto;
+            width:450px;
+            height:300px;
+            background: linear-gradient(rgb(236, 102, 102),rgb(73, 73, 231));
+        }
+    </style>
+    <script>
+        function total(){
+            var a=document.getElementById("chick").value;
+            var b =document.getElementById("pan").value;
+            var c = document.getElementById("chick").value;
+            var res= 100*a+80*b+60*c;
+            document.getElementById("out").value=res;
+        }
+
+        function mes(c){
+            alert('Your order is'+c);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1>Pizza Order Form</h1>
+        <div>
+            <table id="tab">
+                <tr>
+                    <td>Item name</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                </tr>
+                <tr>
+                    <td>Chicken Pizza</td>
+                    <td>100</td>
+                    <td><input type="text" id="chick"/></td>
+                </tr>
+                <tr>
+                    <td>Panner Pizza</td>
+                    <td>80</td>
+                    <td><input type="text" id="pan"/></td>
+                </tr>
+                <tr>
+                    <td>Veg Pizza</td>
+                    <td>60</td>
+                    <td><input type="text" id="veg"/></td>
+                </tr>
+            </table>
+            <br/>
+            <input type="button" value="Total Cost" onclick="total()"/>
+            <input type="text" id="out"/>
+            <br/><br/>
+            <input type="button" value="Place Order" id="placmes" onclick="mes('Placed')"/>
+            <input type="button" value="Cancel Order" id="canmes" onclick="mes('Canceled')"/>
+        </div>
+    </form>
+</body>
+</html>
